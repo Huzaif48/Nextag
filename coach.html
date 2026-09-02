@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!--bootstrap-->
+    <!-- AOS CSS -->
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="CSS/brands.css">
+    <link rel="stylesheet" href="CSS/headerfooter.css">
+    <title>NexTag</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="pictures/pop1.avif" type="image/x-icon">
+
+    <!-- Source - https://stackoverflow.com/a/75345744 Posted by Rizeen Retrieved 2026-03-14, License - CC BY-SA 4.0 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+</head>
+
+<body>
+    <!--Header-->
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+        <div class="container-fluid">
+            <div class="web-logo">
+                <a href="index.html"><i class="fa-solid fa-bag-shopping fa-bounce"></i></a>
+                <h6>ɓɐ⊥xǝN</h6>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon navbar-dark"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav d-flex justify-content-end w-100">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About us.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Brands
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="product.html">All products</a></li>
+                            <li><a class="dropdown-item" href="hermes.html"> Hermes</a></li>
+                            <li><a class="dropdown-item" href="louis vuitton.html"> Louis Vuitton</a></li>
+                            <li><a class="dropdown-item" href="dior.html"> Dior</a></li>
+                            <li><a class="dropdown-item" href="gucci.html"> Gucci</a></li>
+                            <li><a class="dropdown-item" href="prada.html"> Prada</a></li>
+                            <li><a class="dropdown-item" href="coach.html"> Coach</a></li>
+                            <li><a class="dropdown-item" href="celine.html"> Celine</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="FAQS.HTML">FAQ'S</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Site map.HTML">Site Map</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contactus.HTML">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Header End-->
+
+    <!--first-view-->
+    <div class="coach-first" data-aos="zoom-in">
+        <img src="pictures/coach.png">
+    </div>
+
+    <div class="logo" data-aos="fade-up">
+        <img src="pictures/coach.png" id="logo">
+    </div>
+
+    <!--product-section-->
+    <div class="product-section">
+        <div class="card" data-aos="fade-up" data-aos-delay="100">
+            <img src="pictures/Coach/coach-1.webp">
+            <div class="content"><hr>
+                <p>Tabby Shoulder Bag 26</h3>
+                <h6>Price : £450</h6>
+                <hr width="100%">
+            </div>
+            <div class="more">
+                <a href="./product description/Coach-1.html"><button class="buy-btn">Buy-Now</button></a>
+                <button class="cart-btn" onclick="cart()"><i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+        </div>
+
+        <div class="card" data-aos="fade-up" data-aos-delay="200">
+            <img src="pictures/Coach/coach-2.webp">
+            <div class="content"><hr>
+                <p>Chain Tabby Shoulder Bag</h3>
+                <h6>Price : £495</h6>
+                <hr width="100%">
+            </div>
+            <div class="more">
+                <a href="./product description/Coach-2.html"><button class="buy-btn">Buy-Now</button></a>
+                <button class="cart-btn" onclick="cart()"><i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+        </div>
+
+        <div class="card" data-aos="fade-up" data-aos-delay="300">
+            <img src="pictures/Coach/coach-3.webp">
+            <div class="content"><hr>
+                <p>Tabby Chain Clutch</h3>
+                <h6>Price : £325</h6>
+                <hr width="100%">
+            </div>
+            <div class="more">
+                <a href="./product description/Coach-3.html"><button class="buy-btn">Buy-Now</button></a>
+                <button class="cart-btn" onclick="cart()"><i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+        </div>
+
+        <div class="card" data-aos="fade-up" data-aos-delay="400">
+            <img src="pictures/Coach/coach-4.webp">
+            <div class="content"><hr>
+                <p>Swing Zip Bag</h3>
+                <h6>Price : £395</h6>
+                <hr width="100%">
+            </div>
+            <div class="more">
+                <a href="./product description/Coach-4.html"><button class="buy-btn">Buy-Now</button></a>
+                <button class="cart-btn" onclick="cart()"><i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+        </div>
+
+        <div class="card" data-aos="fade-up" data-aos-delay="500">
+            <img src="pictures/Coach/coach-5.webp">
+            <div class="content"><hr>
+                <p>Cassie Crossbody Bag 19</h3>
+                <h6>Price : £325</h6>
+                <hr width="100%">
+            </div>
+            <div class="more">
+                <a href="./product description/Coach-5.html"><button class="buy-btn">Buy-Now</button></a>
+                <button class="cart-btn" onclick="cart()"><i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+        </div>
+
+        <div class="card" data-aos="fade-up" data-aos-delay="600">
+            <img src="pictures/Coach/coach-6.webp">
+            <div class="content"><hr>
+                <p>Jonie Bag</h3>
+                <h6>Price : £275</h6>
+                <hr width="100%">
+            </div>
+            <div class="more">
+                <a href="./product description/Coach-6.html"><button class="buy-btn">Buy-Now</button></a>
+                <button class="cart-btn" onclick="cart()"><i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+        </div>
+
+        <div class="card" data-aos="fade-up" data-aos-delay="700">
+            <img src="pictures/Coach/coach-7.webp">
+            <div class="content"><hr>
+                <p>Juliet Shoulder Bag</h3>
+                <h6>Price : £395</h6>
+                <hr width="100%">
+            </div>
+            <div class="more">
+                <a href="./product description/Coach-7.html"><button class="buy-btn">Buy-Now</button></a>
+                <button class="cart-btn" onclick="cart()"><i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+        </div>
+
+        <div class="card" data-aos="fade-up" data-aos-delay="800">
+            <img src="pictures/Coach/coach-8.webp">
+            <div class="content"><hr>
+                <p>Cargo Tote Bag 26</h3>
+                <h6>Price : £195</h6>
+                <hr width="100%">
+            </div>
+            <div class="more">
+                <a href="./product description/Coach-8.html"><button class="buy-btn">Buy-Now</button></a>
+                <button class="cart-btn" onclick="cart()"><i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+        </div>
+
+        <div class="card" data-aos="fade-up" data-aos-delay="900">
+            <img src="pictures/Coach/coach-9.webp">
+            <div class="content"><hr>
+                <p>Brook Flap Chain Bag</h3>
+                <h6>Price : £275</h6>
+                <hr width="100%">
+            </div>
+            <div class="more">
+                <a href="./product description/Coach-9.html"><button class="buy-btn">Buy-Now</button></a>
+                <button class="cart-btn" onclick="cart()"><i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+        </div>
+
+        <div class="card" data-aos="fade-up" data-aos-delay="1000">
+            <img src="pictures/Coach/coach-10.webp">
+            <div class="content"><hr>
+                <p>Dinky Bag 14</h3>
+                <h6>Price : £175</h6>
+                <hr width="100%">
+            </div>
+            <div class="more">
+                <a href="./product description/Coach-10.html"><button class="buy-btn">Buy-Now</button></a>
+                <button class="cart-btn" onclick="cart()"><i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+        </div>
+
+        <div class="card" data-aos="fade-up" data-aos-delay="1100">
+            <img src="pictures/Coach/coach-11.webp">
+            <div class="content"><hr>
+                <p>Soho Flap Bag In <br>Regenerative Leather</h3>
+                <h6>Price : £395</h6>
+                <hr width="100%">
+            </div>
+            <div class="more">
+                <a href="./product description/Coach-11.html"><button class="buy-btn">Buy-Now</button></a>
+                <button class="cart-btn" onclick="cart()"><i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+        </div>
+
+        <div class="card" data-aos="fade-up" data-aos-delay="1200">
+            <img src="pictures/Coach/coach-12.webp">
+            <div class="content"><hr>
+                <p>Tabby Shoulder Bag 20 <br>With Quilting</h3>
+                <h6>Price : £450</h6>
+                <hr width="100%">
+            </div>
+            <div class="more">
+                <a href="./product description/Coach-12.html"><button class="buy-btn">Buy-Now</button></a>
+                <button class="cart-btn" onclick="cart()"><i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+<footer class="main-footer">
+    <div class="footer-container">
+        <div class="footer-col brand-col" data-aos="fade-up">
+            <a href="#Home" class="footer-logo">
+                <i class="fa-solid fa-bag-shopping fa-bounce"></i>
+                <span class="logo-text">ɓɐ⊥xǝN</span>
+            </a>
+            <p class="brand-desc">
+                Embrace the magic that happens when you step out with a beautiful handbag. 
+                Style is a way to say who you are without having to speak.
+            </p>
+        </div>
+
+        <div class="footer-col" data-aos="fade-up" data-aos-delay="100">
+            <h4 class="footer-title">Top Brands</h4>
+            <ul class="footer-links">
+                <li><a href="hermes.html">Hermes</a></li>
+                <li><a href="louis-vuitton.html">Louis Vuitton</a></li>
+                <li><a href="gucci.html">Gucci</a></li>
+                <li><a href="prada.html">Prada</a></li>
+                <li><a href="dior.html">Dior</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col" data-aos="fade-up" data-aos-delay="200">
+            <h4 class="footer-title">Quick Navigation</h4>
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Product.html">Products</a></li>
+                <li><a href="About-us.html">About Us</a></li>
+                <li><a href="FAQS.html">FAQ's</a></li>
+                <li><a href="Contactus.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col" data-aos="fade-up" data-aos-delay="300">
+            <h4 class="footer-title">Find Us</h4>
+            <div class="location-info">
+                <p><i class="fa-solid fa-location-dot"></i> Metro Star Gate, Shahrah-e-Faisal, Karachi, 75200</p>
+                <p><i class="fa-solid fa-phone"></i> (+92) 312 2050704</p>
+                <p><i class="fa-solid fa-envelope"></i> huzaifatariq@gmail.com</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 Nextag. All rights reserved. Designed with ❤️</p>
+    </div>
+</footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./JavaScript/sweetalert.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800, // Animation duration
+            easing: 'ease-in-out', // Animation easing
+            once: false, // Whether animation should happen only once
+            mirror: true // Whether elements should animate out while scrolling past them
+        });
+
+        document.getElementById('pageDropdown').addEventListener('change', function () {
+            if (this.value) {
+                window.location.href = this.value;
+            }
+        });
+    </script>
+</body>
+
+</html>
