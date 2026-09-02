@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/product-description.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/headerfooter.css">
+    <link rel="shortcut icon" href="../pictures/pop1.avif" type="image/x-icon">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--Header-->
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+        <div class="container-fluid">
+            <div class="web-logo">
+                <a href="../index.html"><i class="fa-solid fa-bag-shopping fa-bounce"></i></a>
+                <h6>ɓɐ⊥xǝN</h6>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon navbar-dark"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav d-flex justify-content-end w-100">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../About us.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Brands
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="../product.html">All products</a></li>
+                            <li><a class="dropdown-item" href="../hermes.html"> Hermes</a></li>
+                            <li><a class="dropdown-item" href="../louis vuitton.html"> Louis Vuitton</a></li>
+                            <li><a class="dropdown-item" href="../dior.html"> Dior</a></li>
+                            <li><a class="dropdown-item" href="../gucci.html"> Gucci</a></li>
+                            <li><a class="dropdown-item" href="../prada.html"> Prada</a></li>
+                            <li><a class="dropdown-item" href="../coach.html"> Coach</a></li>
+                            <li><a class="dropdown-item" href="../celine.html"> Celine</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../FAQS.HTML">FAQ'S</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Site map.HTML">Site Map</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Contactus.HTML">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Header End-->
+
+    <div class="main">
+
+        <div class="des-image">
+            <img src="../pictures/Hermes/hermes-5.2.jpeg">
+            <img src="../pictures/Hermes/hermes-5.1.jpeg">
+            <img src="../pictures/Hermes/hermes-5.2.jpeg">
+        </div>
+        <div>
+            <div class="des-text">
+                <img src="../pictures/hermes-logo (1).png" height="180px" width="200px">
+                <h3>Garden Party 49</h3>
+                <p>Add a touch of luxury to your outfit with this elegantly crafted leather purse. Designed for both
+                    style and function, it features a spacious interior, sleek gold-tone hardware, and a timeless
+                    silhouette perfect for any occasion. Ideal for daily use or special events, this purse blends
+                    fashion with practicality effortlessly.
+                </p>
+                <h4>Price : $250</h4>
+                <h5>Feature color
+                </h5>
+                <div class="avl-color">
+                    <div class="cl-1 ftr-clr" onclick="feature()"></div>
+                    <div class="cl-2 ftr-clr" onclick="feature()"></div>
+                    <div class="cl-3 ftr-clr" onclick="feature()"></div>
+                    <div class="cl-4 ftr-clr" onclick="feature()"></div>
+                    <div class="cl-5 ftr-clr" onclick="feature()"></div>
+                    <div class="cl-6 ftr-clr" onclick="feature()"></div>
+                    <div class="cl-7 ftr-clr" onclick="feature()"></div>
+                    <div class="cl-8 ftr-clr" onclick="feature()"></div>
+                </div>
+                <button class="buy-btn" onclick="buy()">Buy Now</button>
+                <form onsubmit="confirmEmail(event)">
+                    <input type="email" id="emailInput" placeholder="Enter Your Email" required>
+                    <button class="confirm-btn" type="submit">Confirm</button>
+                </form>
+
+                <p class="recive">YOU RECIVED YOUR 👜 IN JUST 05 DAYS </p>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Footer Start-->
+    <footer>
+        <div class="footer-1 ftrbox" data-aos="fade-up">
+            <a href="../index.html" class="a"><i class="fa-solid fa-bag-shopping fa-bounce"></i>
+                <h6>ɓɐ⊥xǝN</h6>
+            </a>
+            <h6 class="logo-des">embrace the majic <br> that happence when you <br>step out with the <br>beautiful hand
+                bag</h6>
+        </div>
+        <div class="footer-2 ftrbox" data-aos="fade-up" data-aos-delay="50">
+            <h4>Brands</h4>
+            <ul>
+                <a href="../hermes.html">
+                    <li>Hermes</li>
+                </a>
+                <a href="../louis vuitton.html">
+                    <li>Louis-Vuitton</li>
+                </a>
+                <a href="../gucci.html">
+                    <li>Gucci</li>
+                </a>
+                <a href="../prada.html">
+                    <li>Prada</li>
+                </a>
+                <a href="../dior.html">
+                    <li>dior</li>
+                </a>
+            </ul>
+        </div>
+        <div class="footer-3 ftrbox" data-aos="fade-up" data-aos-delay="100">
+            <h4>Brands</h4>
+            <ul>
+                <a href="../index.html">
+                    <li>Home</li>
+                </a>
+                <a href="../Product.html">
+                    <li>Products</li>
+                </a>
+           <a href="../About us.html">
+                    <li>About us</li>
+                </a>
+                <a href="../FAQS.HTML">
+                    <li>FAQ'S</li>
+                </a>
+                <a href="../Contactus.html">
+                    <li>Contact us</li>
+                </a>
+            </ul>
+        </div>
+        <div class="footer-4 ftrbox" data-aos="fade-up" data-aos-delay="150">
+            <h4>Store Location</h4>
+            <h6 class="location">
+                📍 Address:
+                650 Madison Avenue,
+                New York, NY 10022,
+                United States<br>
+                📞+1 (212) 535-3703
+            </h6>
+        </div>
+        <hr>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="../JavaScript/sweetalert.js"></script>
+
+</html>
