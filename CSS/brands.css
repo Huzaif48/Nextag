@@ -1,0 +1,569 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* First View Section */
+.first-view {
+    height: 700px;
+    width: 100%;
+    background-image: url(../pictures/Leonardo3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.first-view h1 {
+    margin: 150px 0 0 100px;
+    font-size: 100px;
+    font-family: "Dancing Script", cursive;
+    color: #38220f;
+}
+
+.fvbtn {
+    margin: 35px 0 0 120px;
+    width: 200px;
+    height: 50px;
+    background-color: #dbc1ac;
+    font-family: Rowdies;
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.fvbtn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #38220f;
+    background-color: #967259;
+}
+
+/*stky-btn*/
+.stky-btn {
+    position: fixed;
+    top: 85%;
+    left: 93%;
+    height: 60px;
+    width: 60px;
+    background-color: #dbc1ac;
+    color:#38220f;
+    border: 2px solid black;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #dbc1ac;
+    transition: all 0.3s ease-in-out;
+    z-index: 100;
+}
+
+.stky-btn:hover {
+    scale: 1.1;
+    box-shadow: 0 0 20px;
+    background-color: #38220f;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.fa-arrow-up {
+    font-size: 20px;
+    font-weight: 900;
+    color: #38220f;
+}
+
+.fa-arrow-up:hover{
+    color: #ece0d1;
+}
+/*header end*/
+
+/*first view*/
+
+/*hermes web img*/
+
+.hermes-first {
+    margin-bottom: 50px;
+    height: 500px;
+    width: 100%;
+    background-image: url(../pictures/Hermes/hermes-main.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.hermes-first img {
+    width: 250px;
+    position: relative;
+    top: 155px;
+}
+
+/*louis vuitton web img*/
+
+.lv-first {
+    height: 500px;
+    width: 100%;
+    background-image: url(../pictures/Louis-Vuitton/lv-main.avif);
+    background-position: center;
+    background-size: cover;
+}
+
+.lv-first img {
+    width: 320px;
+    position: relative;
+    top: 150px;
+}
+
+/*prada web img*/
+
+.prada-first {
+    height: 500px;
+    width: 100%;
+    background-image: url(..//pictures/Prada/prada-guru.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/*gucci web img*/
+
+.gucci-first {
+    height: 500px;
+    width: 100%;
+    background-image: url(..//pictures/Gucci/Gucci\ Bamboo\ 3520.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.gucci-first img {
+    width: 320px;
+    position: relative;
+    top: 150px;
+}
+
+/*celine web img*/
+
+.celine-first {
+    height: 500px;
+    width: 100%;
+    background-image: url(../pictures/celinh.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.celine-first img {
+    width: 320px;
+    position: relative;
+    top: 150px;
+}
+
+/*dior web img*/
+
+.dior-first {
+    height: 500px;
+    width: 100%;
+    background-image: url(../pictures/Dior/dior-main.avif);
+    background-position: center;
+    background-size: cover;
+}
+
+.dior-first img {
+    width: 320px;
+    position: relative;
+    top: 150px;
+}
+
+/*coach web img*/
+
+.coach-first {
+    height: 500px;
+    width: 100%;
+    background-image: url(../pictures/coachh.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.coach-first img {
+    width: 320px;
+    position: relative;
+    top: 150px;
+}
+
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    width: 300px;
+    height: 200px;
+    filter: drop-shadow(0 0 10px black);
+}
+
+/*product card start*/
+
+.product-section {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 80px;
+}
+
+.card {
+    margin-bottom: 50px;
+    width: 260px;
+    height: 400px;
+    padding-bottom: 10px;
+    position: relative;
+    background-color: #dbc1ac;
+    box-shadow: 0 0 10px #967259;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.25s ease-in-out;
+}
+
+.card:hover {
+    scale: 1.03;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    object-fit: cover;
+    transition: all 0.25s ease-in-out;
+}
+
+.card img,
+.buy-btn,
+.cart-btn:hover {
+    transform: scale(1.03);
+}
+
+.content {
+    text-align: center;
+    height: 150px;
+    font-size: 13px;
+}
+
+.more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+}
+
+.buy-btn {
+    height: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    padding: 0 15px;
+    border: none;
+    border-radius: 50px;
+    background-color: #634832;
+    color: white;
+    box-shadow: 0 0 10px #38220f;
+    transition: all 0.25s ease-in-out;
+}
+
+.cart-btn {
+    padding: 7px 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #38220f;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 0 0 10px #38220f;
+    transition: all 0.25s ease-in-out;
+}
+
+.buy-btn:hover {
+    transform: scale(1.1);
+}
+
+.cart-btn:hover {
+    transform: scale(1.1);
+}
+
+.cart-btn i {
+    position: relative;
+    top: 4px;
+    color: #dbc1ac;
+    font-size: 15px;
+}
+
+.cart-btn p {
+    font-size: 10px;
+}
+
+/*product card end*/
+
+/* ===================== RESPONSIVE ===================== */
+
+/* Laptop */
+@media (max-width: 992px) {
+    .first-view {
+        height: 500px;
+    }
+
+    .first-view h1 {
+        margin: 100px 0 0 50px;
+        font-size: 75px;
+    }
+
+    .fvbtn {
+        margin: 25px 0 0 70px;
+    }
+
+    .hermes-first,
+    .lv-first,
+    .prada-first,
+    .gucci-first,
+    .celine-first,
+    .dior-first,
+    .coach-first {
+        height: 400px;
+    }
+
+    .hermes-first img,
+    .lv-first img,
+    .gucci-first img,
+    .celine-first img,
+    .dior-first img,
+    .coach-first img {
+        top: 120px;
+    }
+
+    .product-section {
+        column-gap: 40px;
+    }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .first-view {
+        height: 400px;
+    }
+
+    .first-view h1 {
+        margin: 80px 0 0 30px;
+        font-size: 60px;
+    }
+
+    .fvbtn {
+        margin: 20px 0 0 45px;
+        width: 170px;
+        height: 45px;
+        font-size: 17px;
+    }
+
+    .hermes-first,
+    .lv-first,
+    .prada-first,
+    .gucci-first,
+    .celine-first,
+    .dior-first,
+    .coach-first {
+        height: 320px;
+    }
+
+    .hermes-first img,
+    .lv-first img,
+    .gucci-first img,
+    .celine-first img,
+    .dior-first img,
+    .coach-first img {
+        width: 220px;
+        top: 100px;
+    }
+
+    .logo img {
+        width: 220px;
+        height: 150px;
+    }
+
+    .product-section {
+        padding: 30px;
+        column-gap: 30px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .first-view {
+        height: 300px;
+    }
+
+    .first-view h1 {
+        margin: 60px 0 0 20px;
+        font-size: 48px;
+    }
+
+    .fvbtn {
+        margin: 15px 0 0 30px;
+        width: 150px;
+        height: 40px;
+        font-size: 15px;
+    }
+
+    .hermes-first,
+    .lv-first,
+    .prada-first,
+    .gucci-first,
+    .celine-first,
+    .dior-first,
+    .coach-first {
+        height: 250px;
+    }
+
+    .hermes-first img,
+    .lv-first img,
+    .gucci-first img,
+    .celine-first img,
+    .dior-first img,
+    .coach-first img {
+        width: 160px;
+        top: 80px;
+    }
+
+    .logo img {
+        width: 180px;
+        height: 120px;
+    }
+
+    .product-section {
+        padding: 20px;
+        column-gap: 15px;
+    }
+
+    .card {
+        flex: 0 1 calc(50% - 15px);
+        width: auto;
+        min-width: 0;
+        max-width: 250px;
+        height: auto;
+        min-height: 340px;
+        padding-bottom: 15px;
+    }
+
+    .card img {
+        height: 55vw;
+        max-height: 280px;
+        width: 100%;
+    }
+
+    .content {
+        padding: 0 10px;
+    }
+
+    .content h3 {
+        font-size: 12px;
+        line-height: 16px;
+        margin: 5px 0;
+    }
+
+    .content h4 {
+        font-size: 13px;
+        margin: 5px 0;
+    }
+
+    .more {
+        gap: 10px;
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .buy-btn {
+        height: 32px;
+        font-size: 12px;
+        padding: 0 12px;
+    }
+
+    .cart-btn {
+        height: 32px;
+        width: 46px;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 375px) {
+    .first-view h1 {
+        font-size: 40px;
+    }
+
+    .fvbtn {
+        width: 130px;
+        height: 35px;
+        font-size: 13px;
+    }
+
+    .hermes-first img,
+    .lv-first img,
+    .gucci-first img,
+    .celine-first img,
+    .dior-first img,
+    .coach-first img {
+        width: 130px;
+        top: 70px;
+    }
+
+    .product-section {
+        column-gap: 10px;
+    }
+
+    .card {
+        flex: 0 1 calc(50% - 10px);
+        min-height: 300px;
+        padding-bottom: 12px;
+    }
+
+    .card img {
+        height: 50vw;
+        max-height: 200px;
+    }
+
+    .content {
+        padding: 0 6px;
+    }
+
+    .content h3 {
+        font-size: 11px;
+        line-height: 14px;
+    }
+
+    .content h4 {
+        font-size: 12px;
+    }
+
+    .more {
+        gap: 6px;
+        padding: 0 6px;
+    }
+
+    .buy-btn {
+        height: 28px;
+        font-size: 11px;
+        padding: 0 8px;
+    }
+
+    .cart-btn {
+        height: 28px;
+        width: 40px;
+    }
+
+    .cart-btn i {
+        font-size: 12px;
+    }
+}
+

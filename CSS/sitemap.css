@@ -1,0 +1,139 @@
+/*--------------------------------- Site Map Section --------------------------------- */
+:root {
+    --primary-color: #967259;
+    --black-color: #38220f;
+    --dark-black: #634832;
+    --paragraph-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.site-container {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 100px 0;
+    border-radius: .625rem;
+}
+
+.site-container h1, .site-paragraph{
+    font-family: "Dancing Script", cursive;
+}
+
+.site-container h1{
+    font-size: 30px;
+    font-weight: 900;
+    filter: drop-shadow(0 0 5px #38220f);
+}
+
+.site-paragraph{
+    font-size: 20px;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.site-box {
+    width: 300px;
+    border: .1875rem solid #967259;
+    background: #ece0d1;
+    padding: .9375rem;
+    border-radius: .625rem;
+    margin-top: 1.875rem;
+}
+
+.site-box a {
+    display: block;
+    border: .125rem solid #38220f;
+    border-top: .0625rem solid #dbc1ac;
+    padding: .5rem;
+    border-radius: .3125rem;
+    text-align: center;
+    margin: 10px;
+    color: #634832;
+    transition: all 0.2s ease-out 0s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.site-box a:hover {
+    background-color: #dbc1ac;
+    border-top: .125rem solid #634832;
+    color: black;
+    font-size: 1.1rem;
+    box-shadow: 0 .625rem 1.25rem rgba(150, 114, 89, 0.8);
+}
+
+/* Animation for site map heading */
+.site-container h1 {
+    overflow: hidden;
+}
+
+.site-container h1 span {
+    display: inline-block;
+}
+
+/* ===================== RESPONSIVE ===================== */
+
+/* Tablet */
+@media (max-width: 768px) {
+    .site-container {
+        padding: 70px 0;
+    }
+
+    .row {
+        gap: 20px;
+    }
+
+    .site-box {
+        width: 260px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .site-container {
+        padding: 50px 15px;
+    }
+
+    .site-container h1 {
+        font-size: 25px;
+    }
+
+    .site-paragraph {
+        font-size: 17px;
+    }
+
+    .row {
+        gap: 15px;
+    }
+
+    .site-box {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 375px) {
+    .site-container h1 {
+        font-size: 22px;
+    }
+
+    .site-box {
+        padding: 10px;
+    }
+}

@@ -1,0 +1,423 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* Scroll to Top Button */
+.stky-btn {
+    position: fixed;
+    top: 85%;
+    left: 93%;
+    height: 60px;
+    width: 60px;
+    background-color: var(--light-beige);
+    color: var(--darkest-brown);
+    border: 2px solid var(--black);
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--light-beige);
+    transition: all 0.3s ease-in-out;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.stky-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px var(--darkest-brown);
+    background-color: var(--darkest-brown);
+    color: var(--light-cream);
+    border-color: var(--light-cream);
+}
+
+.fa-arrow-up {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 100px 0;
+}
+
+.abt {
+    height: 400px;
+    padding: 0 70px;
+    font-size: 20px;
+    background-color: var(--light-beige);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.abt img {
+    width: 700px;
+    height: 300px;
+    object-fit: cover;
+    transform: scale(1.45);
+    filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.3));
+    animation: abt 6s ease-in infinite;
+}
+
+@keyframes abt {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.abt-content {
+    max-width: 600px;
+    z-index: 1;
+}
+
+.abt h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.abt a {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.abt a:hover {
+    color: var(--dark-brown);
+}
+
+/* Contact Cards */
+.card-main {
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.card-main .cards {
+    width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background-color: var(--light-cream);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card-main .cards:hover {
+    transform: translateY(-10px);
+}
+
+.content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-head {
+    font-size: 1.8rem;
+    font-weight: 900;
+    margin-bottom: 15px;
+    color: var(--darkest-brown);
+}
+
+.para {
+    line-height: 1.6;
+    font-size: 1.1rem;
+    color: var(--dark-brown);
+}
+
+.cards .fa-solid {
+    width: 80px;
+    height: 80px;
+    font-size: 35px;
+    border: 10px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--darkest-brown);
+    background-color: var(--light-beige);
+}
+
+/* Contact Form Section */
+.card-main-2 {
+    padding: 30px;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.content-1 {
+    width: 100%;
+    max-width: 550px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.content-1 h1 {
+    line-height: 1.3;
+    word-spacing: 3px;
+    font-size: 2.2rem;
+    color: var(--darkest-brown);
+}
+
+.content-1 p {
+    margin-top: 30px;
+    line-height: 1.7;
+    font-size: 1.1rem;
+    font-weight: 600;
+    word-spacing: 3px;
+    color: var(--dark-brown);
+}
+
+.content-1 button {
+    height: 45px;
+    width: 180px;
+    margin-top: 30px;
+    font-size: 1.1rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: var(--dark-brown);
+    color: var(--white);
+    border: none;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.content-1 button:hover {
+    background-color: var(--darkest-brown);
+    transform: scale(1.05);
+}
+
+.card-main-2 img {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* form */
+
+.container{
+    width: 100%;
+    height: 500px;
+    background-color: #dbc1acbf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container form{
+    text-align: center;
+}
+
+form h1{
+    font-family: "Dancing Script", cursive;
+}
+
+form label{
+    color: #23150a;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 580;
+    font-size: 18px;
+}
+form input{
+    margin: 10px;
+    width: 350px;
+    background-color: #dbc1acbf;
+    border: none;
+    border-bottom: 1px solid #23150a;
+    outline: none;
+    color: #38220f;
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.2s ease-in;
+}
+
+form input:focus{
+    border-bottom: 3px solid #23150a;
+    filter: drop-shadow(0 0 10px #c09474);
+}
+
+form button{
+    margin:20px 0 55px;
+    width: 150px;
+    height: 35px;
+    background-color: #38220f;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    border: 2px solid #967259;
+    border-radius: 20px;
+    box-shadow: 0 0 5px #634832;
+    transition: all 0.25s ease-in;
+}
+
+form button:hover{
+    scale: 1.06;
+    box-shadow: 0 0 10px #38220f;
+    background-color: #23150a;
+}
+
+/* ===================== RESPONSIVE ===================== */
+
+/* Laptop */
+@media (max-width: 992px) {
+    .abt {
+        padding: 0 40px;
+    }
+
+    .abt img {
+        width: 500px;
+    }
+
+    .abt-content {
+        max-width: 400px;
+    }
+
+    .card-main {
+        gap: 30px;
+    }
+
+    .card-main .cards {
+        width: 400px;
+    }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .abt {
+        height: auto;
+        padding: 30px 30px;
+        gap: 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .abt img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+    }
+
+    .abt h1 {
+        font-size: 2rem;
+    }
+
+    .card-main {
+        margin: 30px;
+    }
+
+    .card-main .cards {
+        width: 90%;
+        flex-direction: column;
+        padding: 25px;
+    }
+
+    .card-main-2 {
+        gap: 30px;
+    }
+
+    .content-1 {
+        text-align: center;
+    }
+
+    .content-1 h1 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .stky-btn {
+        left: auto;
+        right: 3%;
+    }
+
+    .contact-section {
+        padding: 60px 0;
+    }
+
+    .abt {
+        padding: 25px 20px;
+    }
+
+    .abt h1 {
+        font-size: 1.7rem;
+    }
+
+    .card-main {
+        margin: 20px;
+    }
+
+    .card-main .cards {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .cards .fa-solid {
+        width: 60px;
+        height: 60px;
+        font-size: 25px;
+    }
+
+    .content-1 h1 {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        height: auto;
+        padding: 30px 15px;
+    }
+
+    .container form {
+        width: 100%;
+    }
+
+    form input {
+        width: 100%;
+        max-width: 350px;
+        margin: 10px 0;
+    }
+
+    .card-main-2 {
+        padding: 20px;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 375px) {
+    .abt {
+        padding: 20px 15px;
+    }
+
+    .card-main .cards {
+        padding: 15px;
+    }
+
+    .content-1 {
+        font-size: 0.9rem;
+    }
+
+    form input {
+        max-width: 280px;
+    }
+}

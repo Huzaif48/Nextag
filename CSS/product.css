@@ -1,0 +1,374 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/*stky-btn*/
+.stky-btn {
+    position: fixed;
+    top: 85%;
+    left: 94.65%;
+    height: 60px;
+    width: 60px;
+    background-color: #dbc1ac;
+    color: #38220f;
+    border: 2px solid black;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #dbc1ac;
+    transition: all 0.3s ease-in-out;
+    z-index: 100;
+}
+
+.stky-btn:hover {
+    scale: 1.1;
+    box-shadow: 0 0 20px;
+    background-color: #38220f;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.fa-arrow-up {
+    font-size: 20px;
+    font-weight: 900;
+    color: #38220f;
+}
+
+.fa-arrow-up:hover {
+    color: #ece0d1;
+}
+
+
+
+/*product card*/
+.container {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 50px;
+    row-gap: 40px;
+    justify-content: center;
+}
+
+#bnd-heading {
+    padding-top: 100px;
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+    font-weight: 800
+    ;
+}
+
+.crd-hd {
+    text-align: center;
+}
+
+.card {
+    margin-bottom: 50px;
+    width: 260px;
+    height: 400px;
+    padding-bottom: 10px;
+    position: relative;
+    background-color: #dbc1ac;
+    box-shadow: 0 0 10px #967259;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.25s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 0 0 20px #a47a5c;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    background-color: white;
+    overflow: hidden;
+    object-fit: cover;
+    transition: all 0.25s ease-in-out;
+}
+
+.card img,
+.buy-btn,
+.cart-btn:hover {
+    transform: scale(1.03);
+}
+
+.content {
+    text-align: center;
+    font-size: 12px;
+}
+
+
+.more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+}
+
+.buy-btn {
+    height: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    padding: 0 15px;
+    border: none;
+    border-radius: 50px;
+    background-color: #634832;
+    color: white;
+    box-shadow: 0 0 10px #38220f;
+    transition: all 0.25s ease-in-out;
+}
+
+.cart-btn {
+    padding: 0 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #38220f;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 0 0 10px #38220f;
+    transition: all 0.25s ease-in-out;
+}
+
+.buy-btn:hover {
+    background-color: #967259;
+    border-radius: 19px;
+    transform: scale(1.1);
+}
+
+.cart-btn:hover {
+    background-color: #634832;
+    border-radius: 19px;
+    transform: scale(1.1);
+}
+
+.cart-btn i {
+    position: relative;
+    top: 4px;
+    color: #dbc1ac;
+    font-size: 15px;
+}
+
+.cart-btn p {
+    font-size: 10px;
+}
+
+/*Vs button*/
+.Vs-btn {
+    position: fixed;
+    top: 73%;
+    left: 94.6%;
+    height: 60px;
+    width: 60px;
+    background-image: url(../pictures/VS\ btn.jpeg);
+    background-position: center;
+    background-size: cover;
+    border: 2px solid #634832;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #38220f;
+    transition: all 0.3s ease-in-out;
+    z-index: 100;
+}
+
+.Vs-btn:hover {
+    scale: 1.02;
+    box-shadow: 0 0 20px #38220f;
+    background-color: #634832;
+    border: 1px solid #38220f;
+    cursor: pointer;
+}
+
+.fa-arrow-up {
+    font-size: 20px;
+    font-weight: 900;
+    color: #ece0d1;
+}
+
+/* ===================== RESPONSIVE ===================== */
+
+/* Laptop */
+@media (max-width: 992px) {
+    .container {
+        column-gap: 30px;
+    }
+
+    .Vs-btn,
+    .stky-btn {
+        left: auto;
+        right: 2%;
+    }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    #bnd-heading {
+        padding-top: 80px;
+        font-size: 32px;
+    }
+
+    .container {
+        column-gap: 20px;
+        row-gap: 30px;
+        padding-top: 30px;
+    }
+
+    .card {
+        width: 230px;
+        height: 360px;
+    }
+
+    .Vs-btn {
+        top: 70%;
+        right: 2%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .stky-btn {
+        left: auto;
+        right: 3%;
+        top: 85%;
+    }
+
+    .Vs-btn {
+        left: auto;
+        right: 3%;
+        top: 70%;
+        height: 50px;
+        width: 50px;
+    }
+
+    #bnd-heading {
+        padding-top: 60px;
+        font-size: 28px;
+    }
+
+    .container {
+        padding-top: 20px;
+        row-gap: 20px;
+        column-gap: 15px;
+    }
+
+    .card {
+        flex: 0 1 calc(50% - 15px);
+        width: auto;
+        min-width: 0;
+        max-width: 250px;
+        height: auto;
+        min-height: 340px;
+        padding-bottom: 15px;
+    }
+
+    .card img {
+        height: 55vw;
+        max-height: 280px;
+        width: 100%;
+    }
+
+    .content {
+        line-height: normal;
+        padding: 0 10px;
+    }
+
+    .content p {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .content h6 {
+        font-size: 13px;
+        margin-top: 5px;
+    }
+
+    .more {
+        gap: 7px;
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .buy-btn {
+        font-size: 10px;
+        padding: 0 12px;
+    }
+
+    .cart-btn {
+        font-size: 10px;
+        padding: 0 12px;   
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 375px) {
+    .Vs-btn,
+    .stky-btn {
+        height: 45px;
+        width: 45px;
+    }
+
+    #bnd-heading {
+        font-size: 24px;
+    }
+
+    .container {
+        column-gap: 10px;
+    }
+
+    .card {
+        flex: 0 1 calc(50% - 10px);
+        min-height: 300px;
+        padding-bottom: 12px;
+    }
+
+    .card img {
+        height: 50vw;
+        max-height: 200px;
+    }
+
+    .content {
+        padding: 0 6px;
+    }
+
+    .content h5 {
+        font-size: 11px;
+        line-height: 14px;
+    }
+
+    .content h4 {
+        font-size: 12px;
+    }
+
+    .more {
+        gap: 6px;
+        padding: 0 6px;
+    }
+
+    .buy-btn {
+        height: 28px;
+        font-size: 11px;
+        padding: 0 8px;
+    }
+
+    .cart-btn {
+        height: 28px;
+        width: 40px;
+    }
+
+    .cart-btn i {
+        font-size: 12px;
+    }
+}
